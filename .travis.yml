@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t p7bala/docker-react -f Dockerfile.dev .
+
+scripts:
+    - docker run -e CI=true p7bala/docker-react npm run test
