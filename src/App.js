@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to React Docker</h2>
         </div>
         <p className="App-intro">
-          I was changed for travis
+          I was changed from feature branch
         </p>
       </div>
     );
